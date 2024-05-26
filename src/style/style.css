@@ -1,0 +1,182 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+
+    background-color: #53545E;
+
+    padding: 30px 0;
+
+    font-family: monospace;
+
+    text-transform: uppercase;
+}
+
+main {
+    width: 100%;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.input-list {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+    background-color: #9295B0;
+
+    padding: 30px 0;
+
+    border-radius: 05px;
+}
+
+.input-insert {
+    width: 100%;
+    padding: 30px 0 ;
+}
+
+form {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 80%;
+    height: 30px;
+
+    padding: 15px 10px;
+
+    margin-bottom: 15px;
+
+    border: none;
+    outline: none;
+    font-family: monospace;
+
+    border: 1px solid #53545E;
+}
+
+input::placeholder, .btn-schedule {
+    text-transform: uppercase;
+}
+
+
+.btn-schedule {
+    width: 80%;
+
+    border: 0;
+    outline: 0;
+
+    padding: 15px 10px;
+
+    background-color: #8a8da8;
+    cursor: pointer;
+
+    border: 1px solid #53545E;
+
+    border-radius: 4px;
+
+    transition: ease-in-out 1s;
+
+    font-family: monospace;
+}
+
+.btn-schedule:hover {
+    background-color: #53545E;
+}
+
+.list-schedule  {
+    width: 100%;
+    height: 100%;
+}
+
+
+.list-schedule li {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 30% 20%;
+    justify-items: center;
+    align-items: center;
+    list-style: circle;
+
+    border-bottom: 1.8px solid #53545E;
+
+    padding: 10px 0px 10px 40px;
+}
+
+.list-schedule li:nth-child(odd){
+    background-color: #8a8da8;
+}
+
+
+.message-error {
+    display: none;
+    color: rgb(72, 6, 6);
+
+    font-weight: 800;
+
+    margin-top: 20px;
+}
+
+ul input {
+    margin: auto;
+}
+
+ul div {
+    display: flex;
+    align-items: center;
+}
+
+ul div {
+    border-radius: 50%;
+}
+
+
+ul div img {
+    width: 30px;
+
+    background-color: #53545E;
+    border-radius: 50%;
+
+    padding: 7px;
+
+    border: 1px solid #53545E;
+
+    cursor: pointer;
+
+    border: 1px solid #53545E;
+
+    transition: ease-in-out 0.8s;
+}
+
+ul div img:hover {
+    border: 1px solid white;
+
+}
+
+.name-schedule, .andress-schedule, .buttons-edit-schedule{
+    justify-self: flex-start;
+}
+
+
+
+
+.btn-edit-schedule, .btn-confirm-schedule {
+    margin-right: 10px;
+}
